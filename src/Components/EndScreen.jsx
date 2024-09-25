@@ -51,7 +51,7 @@ export default function EndScreen() {
                         role="progressbar"
                         style={{ "--value": (score * 100) / questions.length }}
                     >
-                        <span className="font-semibold">{questions.length} / {score}</span>
+                        <span className="font-semibold">{score}/{questions.length}</span>
                     </div>
                 </div>
                 <div className="card-actions indicator-item indicator-bottom">

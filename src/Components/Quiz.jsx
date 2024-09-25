@@ -77,7 +77,7 @@ export default function Quiz() {
                     <div className='shadow-lg radial-progress progress-accent text-info bg-base-300' role='progressbar' style={{
                         "--value": (currentQuestion + 1) * 10, "--size": "3rem", "--thickness": "0.3rem"
                     }}>
-                        <span className='text-xs font-semibold'> {questions.length}/{currentQuestion + 1}</span>
+                        <span className='text-xs font-semibold'> {currentQuestion + 1}/{questions.length}</span>
                     </div>
                 </div>
                 <div className='indicator-bottom indicator-item'>
