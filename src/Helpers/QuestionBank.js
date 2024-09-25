@@ -88,5 +88,6 @@ export const questions = [
         optionC: 100,
         optionD: 120,
         answer: "optionC",
+        isLast: true,
     }
 ];
