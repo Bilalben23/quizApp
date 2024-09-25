@@ -22,5 +22,5 @@ This Quiz App is a dynamic and interactive web application that allows users to 
 ## Visit the App
 - To try out the quiz app, visit: [Quiz App](https://bilalben23.github.io/quizApp/)
 
+<img width="960" alt="Screenshot 2024-09-25 164429" src="https://github.com/user-attachments/assets/71dc9e66-76a0-4b7a-87c6-acce1f584c66">
 
-<img width="960" alt="Screenshot 2024-09-25 164429" src="https://github.com/user-attachments/assets/bc349edc-986f-4e11-b12e-33242a03022a">
