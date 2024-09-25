@@ -4,7 +4,7 @@ import { questions } from '../Helpers/QuestionBank';
 import { performanceEmoji } from '../Helpers/EmojisPerformance';
 
 export default function EndScreen() {
-    const { score, setGameState } = useContext(QuizContext);
+    const { setScore, score, setGameState, setOptionChosen } = useContext(QuizContext);
 
     // Function to get the appropriate performance emoji based on score
     function getPerformanceEmoji(score, maxScore) {
@@ -21,6 +21,13 @@ export default function EndScreen() {
         } else {
             return performanceEmoji.terrible;   // Below 20% of the score
         }
+    }
+
+    function restartQuiz() {
+        setScore(0)
+        setOptionChosen("");
+        setGameState("menu")
+
     }
 
     const appropriateEmoji = getPerformanceEmoji(score, questions.length);
@@ -50,7 +57,7 @@ export default function EndScreen() {
                 <div className="card-actions indicator-item indicator-bottom">
                     <button
                         type="button"
-                        onClick={() => setGameState("menu")}
+                        onClick={restartQuiz}
                         className="btn btn-sm btn-accent"
                     >
                         Restart Quiz

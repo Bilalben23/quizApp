@@ -10,8 +10,7 @@ import 'react-toastify/dist/ReactToastify.css';
 export default function Quiz() {
 
     const [currentQuestion, setCurrentQuestion] = useState(0)
-    const [optionChosen, setOptionChosen] = useState("");
-    const { setScore, setGameState } = useContext(QuizContext);
+    const { setScore, setGameState, optionChosen, setOptionChosen } = useContext(QuizContext);
 
     function nextQuestion() {
         if (questions[currentQuestion].answer === optionChosen) {

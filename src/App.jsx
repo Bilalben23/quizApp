@@ -10,7 +10,7 @@ export default function App() {
 
   const [gameState, setGameState] = useState("menu")
   const [score, setScore] = useState(0)
-
+  const [optionChosen, setOptionChosen] = useState("");
 
 
 
@@ -22,7 +22,7 @@ export default function App() {
       <div className='absolute px-6 py-2 rotate-45 opacity-45 right-5 top-10'>
         <h1 className='mb-5 text-3xl'>Quiz App</h1>
       </div>
-      <QuizContext.Provider value={{ gameState, setGameState, score, setScore }}>
+      <QuizContext.Provider value={{ gameState, setGameState, optionChosen, setOptionChosen, score, setScore }}>
         {
           gameState === "menu" && <MainMenu />
         }
